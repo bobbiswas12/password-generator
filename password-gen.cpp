@@ -7,10 +7,10 @@ using namespace std;
 #include <string>
 #include <time.h>
 
+//Function to shuffle the password string so obtained
 void shuffle(string password[], int length){
   string temp;
   int randomindex = 0;
-
   for (int i = 0; i < length; i++){
     randomindex = rand()%length;
     temp = password[i];
